@@ -1,0 +1,74 @@
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.projects__filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  justify-content: center;
+}
+.filter-btn {
+  padding: 0.45rem 1.2rem;
+  border-radius: 100px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.filter-btn:hover {
+  border-color: var(--border-accent);
+  color: var(--accent);
+}
+.filter-btn--active {
+  background: var(--accent-muted);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.projects__divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 4rem 0 2.5rem;
+}
+.projects__divider-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+.projects__divider-text {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+}
+.projects__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.projects__grid-item {
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+.projects__empty {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

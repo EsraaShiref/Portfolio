@@ -1,0 +1,51 @@
+<section class="section" id="projects" aria-label="Featured projects">
+  <div class="container">
+    <app-section-header
+      number="03"
+      title="Featured Projects"
+      subtitle="Real products I've shipped — from AI-powered mobile apps to bilingual Angular platforms"
+    ></app-section-header>
+
+    <div class="projects__filter" role="tablist" aria-label="Filter projects by type">
+      @for (opt of filterOptions; track opt.tag) {
+        <button
+          class="filter-btn"
+          [class.filter-btn--active]="activeFilter() === opt.tag"
+          (click)="activeFilter.set(opt.tag)"
+          role="tab"
+          [attr.aria-selected]="activeFilter() === opt.tag"
+        >
+          {{ opt.label }}
+        </button>
+      }
+    </div>
+
+    <div class="projects__list">
+      @for (project of featuredProjects; track project.id) {
+        <div appScrollReveal>
+          <app-project-card [project]="project"></app-project-card>
+        </div>
+      }
+    </div>
+
+    @if (filteredOtherProjects().length) {
+      <div class="projects__divider">
+        <span class="projects__divider-line"></span>
+        <span class="projects__divider-text">More Projects</span>
+        <span class="projects__divider-line"></span>
+      </div>
+
+      <div class="projects__grid">
+        @for (project of filteredOtherProjects(); track project.id; let i = $index) {
+          <div class="projects__grid-item" [style.--stagger-delay]="i * 70 + 'ms'" appScrollReveal [staggerDelay]="i * 70">
+            <app-project-card [project]="project"></app-project-card>
+          </div>
+        }
+      </div>
+    } @else if (otherProjects.length) {
+      <div class="projects__empty" appScrollReveal>
+        <p>No projects match the selected filter.</p>
+      </div>
+    }
+  </div>
+</section>

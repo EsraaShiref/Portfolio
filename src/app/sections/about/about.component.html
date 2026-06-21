@@ -1,0 +1,35 @@
+<section class="section" id="about" aria-label="About me">
+  <div class="container">
+    <app-section-header
+      number="01"
+      title="About Me"
+      subtitle="Engineering degree, AI passion, full-stack reach"
+    ></app-section-header>
+
+    <div class="about__grid" appScrollReveal>
+      <div class="about__text">
+        @for (paragraph of paragraphs; track paragraph) {
+          <p>{{ paragraph }}</p>
+        }
+      </div>
+      <div class="about__stats">
+        <div appScrollReveal [staggerDelay]="0" class="stat-card">
+          <span class="stat-card__number">89.23%</span>
+          <span class="stat-card__label">B.Sc. Grade</span>
+        </div>
+        <div appScrollReveal [staggerDelay]="80" class="stat-card">
+          <span class="stat-card__number">5+</span>
+          <span class="stat-card__label">Technologies</span>
+        </div>
+        <div appScrollReveal [staggerDelay]="160" class="stat-card">
+          <span class="stat-card__number">4</span>
+          <span class="stat-card__label">Shipping Products</span>
+        </div>
+        <div appScrollReveal [staggerDelay]="240" class="stat-card">
+          <span class="stat-card__number">2020</span>
+          <span class="stat-card__label">Coding Since</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

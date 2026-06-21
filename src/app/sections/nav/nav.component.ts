@@ -8,9 +8,7 @@ import { ScrollService } from '../../services/scroll.service';
     <nav class="nav" [class.nav--scrolled]="scrollService.isScrolled()" aria-label="Main navigation">
       <div class="container nav__container">
         <a class="nav__logo" href="#" (click)="scrollToTop($event)" aria-label="Go to top">
-          <span class="nav__logo-bracket">&lt;</span>
-          <span class="nav__logo-text">ES</span>
-          <span class="nav__logo-bracket"> /&gt;</span>
+          <img class="nav__avatar" src="assets/images/profile.jpg" alt="" width="40" height="40">
         </a>
 
         <div class="nav__links" role="list">
@@ -67,24 +65,22 @@ import { ScrollService } from '../../services/scroll.service';
       justify-content: space-between;
     }
     .nav__logo {
-      font-family: var(--font-mono);
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      text-decoration: none;
       display: flex;
       align-items: center;
-      transition: color var(--transition-fast);
+      text-decoration: none;
     }
-    .nav__logo:hover {
-      color: var(--accent);
+    .nav__avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--border-accent);
+      transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
     }
-    .nav__logo-bracket {
-      color: var(--accent);
-      opacity: 0.7;
-    }
-    .nav__logo-text {
-      padding: 0 0.1em;
+    .nav__avatar:hover {
+      transform: scale(1.08);
+      border-color: var(--accent);
+      box-shadow: 0 0 12px var(--accent-glow);
     }
     .nav__links {
       display: none;

@@ -8,7 +8,7 @@ export interface Project {
   solution: string;
   highlights: string[];
   techStack: string[];
-  repoUrl: string;
+  repoUrl?: string;
   liveUrl?: string;
   featured: boolean;
   filterTags: string[];
@@ -21,7 +21,7 @@ export const projects: Project[] = [
     subtitle: 'Mobile Healthcare Platform',
     tag: 'AI + Mobile + Full-Stack',
     tagIcon: 'medical',
-    featured: true,
+    featured: false,
     problem:
       'Patients juggle between disconnected apps for doctor booking, nutrition tracking, and medical purchases — creating friction, missed appointments, and inconsistent health data.',
     solution:
@@ -94,5 +94,24 @@ export const projects: Project[] = [
     techStack: ['ASP.NET', 'SQL Server', 'MVC'],
     repoUrl: 'https://github.com/EsraaShiref/EmployeeManagementSystem',
     filterTags: ['web', 'full-stack'],
+  },
+  {
+    id: 'harfi',
+    title: 'Harfi — Craftsmen Marketplace Platform',
+    subtitle: 'ITI Graduation Project',
+    tag: 'AI + Full-Stack + Real-Time',
+    tagIcon: 'globe',
+    featured: true,
+    problem: 'Egyptian customers struggle to find trusted, verified craftsmen, while craftsmen lack a centralized platform to manage bookings, communication, and reputation.',
+    solution: 'Led both frontend and backend development on a 5-person team to ship a full-stack, Arabic-first marketplace with real-time chat, an AI-powered craftsman-matching assistant, and a complete admin operations panel.',
+    highlights: [
+      'Frontend: Angular 21 standalone-component architecture, authentication, routing, bilingual RTL/LTR i18n, and theming',
+      'Backend: ASP.NET Core Web API with JWT auth and SignalR hubs for real-time messaging and notifications',
+      'RAG-based AI assistant for conversational craftsman search with image-based vision analysis',
+      'Real-time chat with text, image, voice messages, and live presence/typing indicators',
+    ],
+    techStack: ['Angular 21', 'TypeScript', 'ASP.NET Core', 'SignalR', 'Bootstrap 5 RTL', 'ngx-translate', 'Chart.js'],
+    liveUrl: 'https://harfii.runasp.net/',
+    filterTags: ['full-stack', 'ai', 'web'],
   },
 ];

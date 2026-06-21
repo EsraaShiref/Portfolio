@@ -8,14 +8,10 @@ export interface Project {
   solution: string;
   highlights: string[];
   techStack: string[];
-  links: ProjectLink[];
+  repoUrl: string;
+  liveUrl?: string;
   featured: boolean;
-}
-
-export interface ProjectLink {
-  label: string;
-  url: string;
-  type: 'github' | 'demo' | 'case-study';
+  filterTags: string[];
 }
 
 export const projects: Project[] = [
@@ -36,9 +32,8 @@ export const projects: Project[] = [
       'Integrated Stripe and PayPal checkout for secure medical e-commerce purchases',
     ],
     techStack: ['React Native', 'Laravel', 'Clarifai API', 'Spoonacular API', 'Stripe', 'PayPal'],
-    links: [
-      { label: 'GitHub', url: '#', type: 'github' },
-    ],
+    repoUrl: 'https://github.com/EsraaShiref/HealthHub-Mobile-App',
+    filterTags: ['mobile', 'ai', 'full-stack'],
   },
   {
     id: 'tasweeqar',
@@ -57,9 +52,8 @@ export const projects: Project[] = [
       'Custom SCSS design system covering services, portfolio, team, and contact sections',
     ],
     techStack: ['Angular 21', 'TypeScript', 'SCSS', 'i18n'],
-    links: [
-      { label: 'GitHub', url: '#', type: 'github' },
-    ],
+    repoUrl: 'https://github.com/EsraaShiref/Tasweeqar',
+    filterTags: ['web', 'angular'],
   },
   {
     id: 'university-management',
@@ -78,9 +72,8 @@ export const projects: Project[] = [
       'Entity Framework-backed SQL Server with clean MVC architectural layering',
     ],
     techStack: ['ASP.NET MVC', 'C#', 'SQL Server', 'Entity Framework'],
-    links: [
-      { label: 'GitHub', url: '#', type: 'github' },
-    ],
+    repoUrl: 'https://github.com/EsraaShiref/University-System-MVC',
+    filterTags: ['web', 'full-stack'],
   },
   {
     id: 'employee-management',
@@ -99,8 +92,7 @@ export const projects: Project[] = [
       'Clean MVC architecture ensuring maintainability and scalability',
     ],
     techStack: ['ASP.NET', 'SQL Server', 'MVC'],
-    links: [
-      { label: 'GitHub', url: '#', type: 'github' },
-    ],
+    repoUrl: 'https://github.com/EsraaShiref/EmployeeManagementSystem',
+    filterTags: ['web', 'full-stack'],
   },
 ];

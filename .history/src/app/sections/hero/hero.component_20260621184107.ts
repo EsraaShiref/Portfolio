@@ -53,7 +53,7 @@ import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive'
             <div class="hero__photo-frame">
               <img
                 class="hero__photo"
-                src="assets/images/profile.jpg"
+                src="/src/"
                 alt="Esraa Ahmed Shiref"
                 width="280"
                 height="280"

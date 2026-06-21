@@ -56,9 +56,10 @@ import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive'
       border-radius: var(--radius-lg);
       background: var(--bg-surface);
       border: 1px solid var(--border);
-      transition: border-color var(--transition-base), box-shadow var(--transition-base);
+      transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
     }
     .edu__card:hover {
+      transform: translateY(-4px) scale(1.02);
       border-color: var(--border-accent);
       box-shadow: var(--shadow-glow);
     }

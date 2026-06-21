@@ -18,8 +18,8 @@ import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive'
         ></app-section-header>
 
         <div class="tech-stack__grid">
-          @for (group of skillGroups; track group.category) {
-            <div class="tech-group" appScrollReveal>
+          @for (group of skillGroups; track group.category; let i = $index) {
+            <div class="tech-group" appScrollReveal [staggerDelay]="i * 80">
               <h3 class="tech-group__title">{{ group.category }}</h3>
               <div class="tech-group__chips">
                 @for (skill of group.skills; track skill.name) {
@@ -46,9 +46,10 @@ import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive'
       border-radius: var(--radius-lg);
       background: var(--bg-surface);
       border: 1px solid var(--border);
-      transition: border-color var(--transition-base), box-shadow var(--transition-base);
+      transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
     }
     .tech-group:hover {
+      transform: translateY(-4px) scale(1.02);
       border-color: var(--border-accent);
       box-shadow: var(--shadow-glow);
     }

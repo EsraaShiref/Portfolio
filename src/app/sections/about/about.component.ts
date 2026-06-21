@@ -22,19 +22,19 @@ import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive'
             }
           </div>
           <div class="about__stats">
-            <div class="stat-card">
+            <div appScrollReveal [staggerDelay]="0" class="stat-card">
               <span class="stat-card__number">89.23%</span>
               <span class="stat-card__label">B.Sc. Grade</span>
             </div>
-            <div class="stat-card">
+            <div appScrollReveal [staggerDelay]="80" class="stat-card">
               <span class="stat-card__number">5+</span>
               <span class="stat-card__label">Technologies</span>
             </div>
-            <div class="stat-card">
+            <div appScrollReveal [staggerDelay]="160" class="stat-card">
               <span class="stat-card__number">4</span>
               <span class="stat-card__label">Shipping Products</span>
             </div>
-            <div class="stat-card">
+            <div appScrollReveal [staggerDelay]="240" class="stat-card">
               <span class="stat-card__number">2020</span>
               <span class="stat-card__label">Coding Since</span>
             </div>
@@ -71,11 +71,12 @@ import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive'
       background: var(--bg-surface);
       border: 1px solid var(--border);
       text-align: center;
-      transition: transform var(--transition-fast), border-color var(--transition-fast);
+      transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
     }
     .stat-card:hover {
-      transform: translateY(-2px);
+      transform: translateY(-4px) scale(1.02);
       border-color: var(--border-accent);
+      box-shadow: var(--shadow-glow);
     }
     .stat-card__number {
       display: block;

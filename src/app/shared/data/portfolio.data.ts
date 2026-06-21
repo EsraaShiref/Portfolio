@@ -43,9 +43,11 @@ export const contactInfo: ContactInfo = {
   email: 'Israashiref@gmail.com',
   phone: '+20 102 949 6150',
   github: 'EsraaShiref',
-  linkedin: 'sraa-shiref',
+  linkedin: 'esraa-shiref',
   location: 'Cairo, Egypt',
 };
+
+export const cvFile = 'Esraa_Shiref_CV.pdf';
 
 export const experiences: Experience[] = [
   {

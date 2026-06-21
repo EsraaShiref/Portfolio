@@ -16,9 +16,11 @@ import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive'
           subtitle="From mobile development at a startup to Gen AI internship at ITI"
         ></app-section-header>
 
-        <div class="experience__timeline" appScrollReveal>
-          @for (exp of experiences; track exp.company + exp.startDate) {
-            <app-timeline-item [experience]="exp"></app-timeline-item>
+        <div class="experience__timeline">
+          @for (exp of experiences; track exp.company + exp.startDate; let i = $index) {
+            <div appScrollReveal [staggerDelay]="i * 100">
+              <app-timeline-item [experience]="exp"></app-timeline-item>
+            </div>
           }
         </div>
       </div>

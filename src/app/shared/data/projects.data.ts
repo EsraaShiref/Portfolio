@@ -72,7 +72,7 @@ export const projects: Project[] = [
       'Entity Framework-backed SQL Server with clean MVC architectural layering',
     ],
     techStack: ['ASP.NET MVC', 'C#', 'SQL Server', 'Entity Framework'],
-    repoUrl: 'https://github.com/EsraaShiref/University-System-MVC',
+    repoUrl: 'https://github.com/EsraaShiref/University_Management_System.git',
     filterTags: ['web', 'full-stack'],
   },
   {

@@ -9,8 +9,6 @@
 [![SCSS](https://img.shields.io/badge/SCSS-CSS_Custom_Props-CC6699?style=flat-square&logo=sass&logoColor=white)](https://sass-lang.com)
 [![Standalone](https://img.shields.io/badge/Architecture-Standalone_Components-0F0F11?style=flat-square&logo=angular&logoColor=white)](https://angular.dev)
 [![LinkedIn](https://img.shields.io/badge/esraa--shiref-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/esraa-shiref)
-[![Email](https://img.shields.io/badge/Israashiref@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:Israashiref@gmail.com)
-
 </div>
 
 ---

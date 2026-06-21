@@ -8,9 +8,6 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![SCSS](https://img.shields.io/badge/SCSS-CSS_Custom_Props-CC6699?style=flat-square&logo=sass&logoColor=white)](https://sass-lang.com)
 [![Standalone](https://img.shields.io/badge/Architecture-Standalone_Components-0F0F11?style=flat-square&logo=angular&logoColor=white)](https://angular.dev)
-[![Made with ❤️](https://img.shields.io/badge/Made_with_❤️-Cairo,_Egypt-0a0a0f?style=flat-square&logo=googlemaps&logoColor=white)](https://en.wikipedia.org/wiki/Cairo)
-
-[![GitHub](https://img.shields.io/badge/EsraaShiref-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/EsraaShiref)
 [![LinkedIn](https://img.shields.io/badge/esraa--shiref-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/esraa-shiref)
 [![Email](https://img.shields.io/badge/Israashiref@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:Israashiref@gmail.com)
 

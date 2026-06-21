@@ -1,0 +1,94 @@
+/* ============================================
+   Design Tokens — CSS Custom Properties
+   Dark-mode first with light-mode override
+   ============================================ */
+
+:root,
+[data-theme='dark'] {
+  /* Backgrounds */
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-surface: #1a1a2e;
+  --bg-surface-hover: #22223a;
+  --bg-glass: rgba(26, 26, 46, 0.6);
+
+  /* Text */
+  --text-primary: #e8e8ed;
+  --text-secondary: #9494a8;
+  --text-inverse: #0a0a0f;
+
+  /* Accent */
+  --accent: #00d4ff;
+  --accent-hover: #33ddff;
+  --accent-glow: rgba(0, 212, 255, 0.15);
+  --accent-muted: rgba(0, 212, 255, 0.08);
+
+  /* Borders */
+  --border: #2a2a3e;
+  --border-accent: rgba(0, 212, 255, 0.3);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 20px rgba(0, 212, 255, 0.15);
+
+  /* Gradients */
+  --gradient-accent: linear-gradient(135deg, #00d4ff, #0077b6);
+  --gradient-surface: linear-gradient(135deg, rgba(26, 26, 46, 0.8), rgba(18, 18, 26, 0.8));
+
+  /* Typography */
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Spacing */
+  --section-py: clamp(4rem, 8vw, 8rem);
+  --container-max: 1200px;
+  --container-px: clamp(1rem, 5vw, 2rem);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* Transitions */
+  --transition-fast: 200ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+
+  /* Grid pattern for hero */
+  --grid-color: rgba(255, 255, 255, 0.03);
+  --grid-size: 40px;
+}
+
+[data-theme='light'] {
+  --bg-primary: #f5f5f8;
+  --bg-secondary: #eaeaef;
+  --bg-surface: #ffffff;
+  --bg-surface-hover: #f0f0f5;
+  --bg-glass: rgba(255, 255, 255, 0.7);
+
+  --text-primary: #1a1a2e;
+  --text-secondary: #6b6b80;
+  --text-inverse: #ffffff;
+
+  --accent: #0099cc;
+  --accent-hover: #0077a3;
+  --accent-glow: rgba(0, 153, 204, 0.12);
+  --accent-muted: rgba(0, 153, 204, 0.06);
+
+  --border: #d4d4de;
+  --border-accent: rgba(0, 153, 204, 0.25);
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 20px rgba(0, 153, 204, 0.1);
+
+  --gradient-accent: linear-gradient(135deg, #0099cc, #006699);
+  --gradient-surface: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(245, 245, 248, 0.9));
+
+  --grid-color: rgba(0, 0, 0, 0.03);
+}

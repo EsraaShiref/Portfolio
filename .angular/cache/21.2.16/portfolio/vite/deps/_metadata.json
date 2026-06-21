@@ -1,0 +1,76 @@
+{
+  "hash": "06d07e46",
+  "configHash": "ad9e1196",
+  "lockfileHash": "62d44c6d",
+  "browserHash": "312ed746",
+  "optimized": {
+    "@angular/common/http": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "8b0ce36e",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "f07a8558",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "67b794de",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "84091e42",
+      "needsInterop": false
+    },
+    "@angular/platform-browser/animations/async": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/animations-async.mjs",
+      "file": "@angular_platform-browser_animations_async.js",
+      "fileHash": "18099ecc",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "d5858ae0",
+      "needsInterop": false
+    },
+    "zone.js": {
+      "src": "../../../../../../node_modules/zone.js/fesm2015/zone.js",
+      "file": "zone__js.js",
+      "fileHash": "8c1e6f26",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-4HOWGJIG": {
+      "file": "chunk-4HOWGJIG.js"
+    },
+    "chunk-QBX3ACSW": {
+      "file": "chunk-QBX3ACSW.js"
+    },
+    "chunk-E26R7BU6": {
+      "file": "chunk-E26R7BU6.js"
+    },
+    "chunk-MFMVT2ZY": {
+      "file": "chunk-MFMVT2ZY.js"
+    },
+    "chunk-KGN6RKF4": {
+      "file": "chunk-KGN6RKF4.js"
+    },
+    "browser-A4LWNCS7": {
+      "file": "browser-A4LWNCS7.js"
+    },
+    "chunk-W5XWNYNE": {
+      "file": "chunk-W5XWNYNE.js"
+    },
+    "chunk-WDMUDEB6": {
+      "file": "chunk-WDMUDEB6.js"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { ScrollService } from '../../services/scroll.service';
-import { personalInfo, contactInfo, cvFile } from '../../shared/data/portfolio.data';
+import { personalInfo, contactInfo } from '../../shared/data/portfolio.data';
 import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
 
 @Component({
@@ -27,7 +27,7 @@ import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive'
                 View Projects
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
-              <a class="btn btn--outline" [href]="cvUrl" download aria-label="Download CV">
+              <a class="btn btn--outline" href="Esraa_Shiref_CV.pdf" download="Esraa_Shiref_CV.pdf" aria-label="Download CV">
                 Download CV
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15V3M8 15l4 4 4-4"/><path d="M3 21h18"/></svg>
               </a>
@@ -304,5 +304,4 @@ export class HeroComponent {
   private scrollService = inject(ScrollService);
   readonly personalInfo = personalInfo;
   readonly contactInfo = contactInfo;
-  readonly cvUrl = `assets/${cvFile}`;
 }

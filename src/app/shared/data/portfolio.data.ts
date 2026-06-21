@@ -47,8 +47,6 @@ export const contactInfo: ContactInfo = {
   location: 'Cairo, Egypt',
 };
 
-export const cvFile = 'Esraa_Shiref_CV.pdf';
-
 export const experiences: Experience[] = [
   {
     role: 'Full-Stack Web & Gen AI Development Intern',
